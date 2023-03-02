@@ -1,14 +1,22 @@
+import { resetPassword } from "./../../modules/social-login/auth/index.js";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { Pressable } from "react-native";
 import * as React from "react";
 import { Text, View, StyleSheet, TextInput, TouchableHighlight } from "react-native";
 
 const pressed = () => {
+  const dispatch = useDispatch();
   console.log("pressed");
 };
 
 const ForgotPassword = ({
   navigation
 }) => {
+  useEffect(() => {
+    dispatch(resetPassword());
+    dispatch(resetPassword());
+  }, []);
   return <View style={styles.container}>
       <View style={styles.topHead}>
         <Text style={styles.mainHeading}>Forgot {"\n"} password</Text>
@@ -35,7 +43,7 @@ const ForgotPassword = ({
         </Button>
       </View>
       <View style={styles.back}>
-        <Text style={styles.backText}>Back</Text>
+        <Pressable onPress={{}}><Pressable onPress={{}}><Text style={styles.backText}>Back</Text></Pressable></Pressable>
       </View>
     </View>;
 };
