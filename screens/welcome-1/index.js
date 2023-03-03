@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet, ImageBackground, Dimensions, Pressable } from "react-native";
+import { Text, StyleSheet, ImageBackground, Dimensions } from "react-native";
 const windowWidth = Dimensions.get("window").width;
 const windowHeight = Dimensions.get("window").height;
 
@@ -9,10 +9,6 @@ const Welcome1 = () => {
       <Text style={styles.description}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non at sed.
       </Text>
-      <View style={styles.buttonContainer}>
-        <Button buttonText="Sign Up" style={styles.button} />
-        <Button buttonText="Login" style={styles.button} borderColor="#000" backgroundColor="#fff" textColor="#000" hideShadow />
-      </View>
     </ImageBackground>;
 };
 
@@ -57,62 +53,3 @@ const styles = StyleSheet.create({
   }
 });
 export default Welcome1;
-
-const Button = params => {
-  const backgroundColor = params.backgroundColor || "#000";
-  const textColor = params.textColor || "#fff";
-  const btnStyle = {
-    backgroundColor: backgroundColor,
-    borderColor: params.borderColor || backgroundColor,
-    borderWidth: 1
-  };
-  const btnText = {
-    color: textColor
-  };
-  return <View style={[buttonStyles.btnContainer, params.style]}>
-      <View style={!params.hideShadow ? buttonStyles.shadowContainer : null}>
-        <Pressable style={[buttonStyles.btn, btnStyle]} onPress={params.onPress}>
-          <Text style={[buttonStyles.btnText, btnText]}>
-            {params.buttonText}
-          </Text>
-          <View style={styles.childrenContainer}>{params.children}</View>
-        </Pressable>
-      </View>
-    </View>;
-};
-
-const buttonStyles = StyleSheet.create({
-  btnContainer: {
-    justifyContent: "center"
-  },
-  shadowContainer: {
-    shadowColor: "rgba(0, 0, 0, 0.5)",
-    shadowOffset: {
-      width: 0,
-      height: 5
-    },
-    shadowOpacity: 0.5,
-    shadowRadius: 10,
-    elevation: 10,
-    backgroundColor: "#fff",
-    borderRadius: 10
-  },
-  btn: {
-    height: 50,
-    padding: 10,
-    paddingHorizontal: 25,
-    borderRadius: 10,
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "row"
-  },
-  btnText: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "bold"
-  },
-  childrenContainer: {
-    justifyContent: "center",
-    alignItems: "center"
-  }
-});

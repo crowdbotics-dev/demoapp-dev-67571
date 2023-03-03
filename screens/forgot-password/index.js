@@ -11,8 +11,10 @@ const pressed = () => {
 };
 
 const ForgotPassword = ({
+  route,
   navigation
 }) => {
+  const {} = route.params || {};
   useEffect(() => {
     dispatch(resetPassword());
     dispatch(resetPassword());
