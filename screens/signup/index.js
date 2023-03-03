@@ -28,7 +28,7 @@ const Signup = ({
         </View>
 
         <View style={styles.loginContainer}>
-          <Button onPress={pressed}>Sign up</Button>
+          <Button onPress={pressed} navigation={navigation}>Sign up</Button>
         </View>
         <View style={styles.orContainer}>
           <View style={styles.line} />
@@ -144,7 +144,9 @@ export default Signup;
 
 const Button = props => {
   return <TouchableHighlight onPress={props.onPress} underlayColor='#DDDDDD'>
-      <Pressable onPress={{}}><Pressable onPress={{}}><View style={[btnStyles.button, {
+      <Pressable onPress={{}}><Pressable onPress={() => {
+        props.navigation.navigate("welcome1");
+      }}><View style={[btnStyles.button, {
           backgroundColor: props.backgroundColor ? props.backgroundColor : "#000000",
           height: props.height ? props.height : 49,
           borderWidth: props.borderWidth ? props.borderWidth : 0,

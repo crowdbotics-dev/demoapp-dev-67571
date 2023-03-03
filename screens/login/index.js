@@ -1,3 +1,4 @@
+import { Pressable } from "react-native";
 import React from "react";
 import { Text, StyleSheet, Dimensions, View, TouchableOpacity } from "react-native";
 const deviceWidth = Dimensions.get("window").width;
@@ -9,7 +10,9 @@ const pressed = () => {
 const LoginScreen = params => {
   return <View style={styles.container}>
       <View style={styles.topSection}>
-        <Text style={styles.headingTxt}>Sign In</Text>
+        <Pressable onPress={{}}><Pressable onPress={() => {
+          params.navigation.navigate("signup");
+        }}><Text style={styles.headingTxt}>Sign In</Text></Pressable></Pressable>
       </View>
       <View style={styles.bottomSection}>
         <Text style={styles.bottomSectionText}>Welcome Back!</Text>
@@ -17,8 +20,8 @@ const LoginScreen = params => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor
         </Text>
-        <Button title={"SignUp"}></Button>
-        <Button title={"Login"} btnStyle={styles.loginBtnStyle} textStyle={styles.loginBtnText} onPress={pressed}></Button>
+        <Button title={"SignUp"} navigation={params.navigation}></Button>
+        <Button title={"Login"} btnStyle={styles.loginBtnStyle} textStyle={styles.loginBtnText} onPress={pressed} navigation={params.navigation}></Button>
       </View>
     </View>;
 };
@@ -69,13 +72,16 @@ const styles = StyleSheet.create({
 });
 
 const Button = ({
+  navigation,
   title,
   btnStyle,
   textStyle,
   onPress
 }) => {
   return <TouchableOpacity style={[btnStyles.btn, btnStyle]} onPress={onPress}>
-      <Text style={[btnStyles.btnText, textStyle]}>{title}</Text>
+      <Pressable onPress={{}}><Pressable onPress={() => {
+        navigation.navigate("welcome1");
+      }}><Text style={[btnStyles.btnText, textStyle]}>{title}</Text></Pressable></Pressable>
     </TouchableOpacity>;
 };
 
