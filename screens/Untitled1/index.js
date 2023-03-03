@@ -1,3 +1,4 @@
+import { Pressable } from "react-native";
 import { ImageBackground } from "react-native";
 import React from "react";
 import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
@@ -13,7 +14,9 @@ const GettingStarted = ({
       flex: 1
     }}>
 
-    <ImageBackground style={styles.coPBahvZ} source={require("./Get Started.png")} resizeMode="cover"><ImageBackground style={styles.mMfggrHP} source={require("./Buttons.png")} resizeMode="cover"></ImageBackground></ImageBackground></ScrollView>
+    <ImageBackground style={styles.coPBahvZ} source={require("./Get Started.png")} resizeMode="cover"><Pressable onPress={{}}><Pressable onPress={() => {
+            navigation.navigate("login");
+          }}><ImageBackground style={styles.mMfggrHP} source={require("./Buttons.png")} resizeMode="cover"></ImageBackground></Pressable></Pressable></ImageBackground></ScrollView>
     </SafeAreaView>;
 };
 
