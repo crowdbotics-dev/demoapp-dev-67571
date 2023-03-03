@@ -16,10 +16,11 @@ const LoginScreen = params => {
       </View>
       <View style={styles.bottomSection}>
         <Text style={styles.bottomSectionText}>Welcome Back!</Text>
-        <Text style={styles.bottomSectionDescription}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor
-        </Text>
+        <Pressable onPress={{}}><Pressable onPress={() => {
+          params.navigation.navigate("forgotPassword");
+        }}><Text style={styles.bottomSectionDescription}>
+          Forgot Password
+        </Text></Pressable></Pressable>
         <Button title={"SignUp"} navigation={params.navigation}></Button>
         <Button title={"Login"} btnStyle={styles.loginBtnStyle} textStyle={styles.loginBtnText} onPress={pressed} navigation={params.navigation}></Button>
       </View>
