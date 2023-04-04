@@ -1,3 +1,5 @@
+import { products_get_products_list } from "../../store/products/products_response_get_getProducts.slice.js";
+import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { Text } from "react-native";
 import { useEffect } from "react";
@@ -5,10 +7,13 @@ import React from "react";
 import { StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
 const Untitled1 = () => {
+  const dispatch = useDispatch();
   const {
     entities: products_response_get_getProducts
   } = useSelector(state => state.products_response_get_getProducts);
-  useEffect(() => {}, []);
+  useEffect(() => {
+    dispatch(products_get_products_list());
+  }, []);
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
       backgroundColor: '#f0f0f1',
