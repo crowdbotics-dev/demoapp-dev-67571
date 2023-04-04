@@ -1,14 +1,23 @@
+import { api_v1_signup_create } from "../../store/demoappdevAPI/signups.slice.js";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { Pressable } from "react-native";
 import React from "react";
 import { Text, View, TouchableOpacity, Image, StyleSheet, TextInput, TouchableHighlight } from "react-native";
 
 const pressed = () => {
+  const dispatch = useDispatch();
   console.log("pressed");
 };
 
 const Signup = ({
   navigation
 }) => {
+  useEffect(() => {
+    dispatch(api_v1_signup_create());
+    dispatch(api_v1_signup_create());
+    dispatch(api_v1_signup_create({}));
+  }, []);
   return <View style={styles.container}>
       <View style={styles.heading}>
         <Text style={styles.headingText}>Sign up</Text>

@@ -7,7 +7,10 @@ const pressed = () => {
   console.log("pressed");
 };
 
-const LoginScreen = params => {
+const LoginScreen = route => {
+  const {
+    new_para
+  } = route.params || {};
   return <View style={styles.container}>
       <View style={styles.topSection}>
         <Pressable onPress={{}}><Pressable onPress={() => {
