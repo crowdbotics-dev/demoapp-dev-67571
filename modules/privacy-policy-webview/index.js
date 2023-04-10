@@ -2,7 +2,7 @@ import React, { useEffect, useContext, useState } from "react";
 import { WebView } from "react-native-webview";
 import { OptionsContext } from "@options";
 
-const TermsAndConditionsWebview = ({
+const PrivacyPolicyWebview = ({
   navigation,
   url
 }) => {
@@ -26,6 +26,6 @@ const TermsAndConditionsWebview = ({
 };
 
 export default {
-  title: "Terms and Conditions WebView",
-  navigator: TermsAndConditionsWebview
+  title: "Privacy Policy WebView",
+  navigator: PrivacyPolicyWebview
 };
