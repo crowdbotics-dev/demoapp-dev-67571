@@ -7,14 +7,12 @@ import { StyleSheet, SafeAreaView } from "react-native";
 const Untitled1 = () => {
   return <SafeAreaView style={styles.safeArea}>
       <View style={styles.TJoFcOio}>
-        <View style={styles.wXultJUT}><View style={styles.gWGaGXnx}><View style={styles.hJfASQBN}><View style={styles.vmVkOoEm}><View style={styles.DkXMqeVm}><View style={styles.OVBXxATX}><View style={styles.QGKHexBY}><View style={styles.bnoVXtjy}><Text style={styles.bWcSoNgt}>Instagram</Text></View></View></View></View></View></View></View></View>
-        <View style={styles.kungGegN}><View style={styles.gayZEWHm}><View style={styles.zaERkGdo}><View style={styles.QlUTulsW}><View style={styles.QFaNZKjv}><View style={styles.GOOuuDWh}><View style={styles.lSgftOPP}><View style={styles.dkUHzQuo}><View style={styles.fsuvkwJw}>
-          <View style={styles.bWSKjvrR}>
+        <Text style={styles.bWcSoNgt}>Instagram</Text>
+          <View style={styles.MZTtIvnO}>
             <ImageBackground style={styles.YQsvIcbW} source={require("./file.png")} resizeMode="cover"></ImageBackground>
             <ImageBackground style={styles.HhdseLnU} source={require("./crazy-light.png")} resizeMode="cover"></ImageBackground>
             <ImageBackground style={styles.rKKqEQWu} source={require("./icons8-image-48.png")} resizeMode="cover"></ImageBackground>
           </View>
-        </View></View></View></View></View></View></View></View></View>
       </View>
     </SafeAreaView>;
 };
@@ -171,6 +169,70 @@ const styles = StyleSheet.create({
     flex: 1
   },
   kungGegN: {
+    flex: 1
+  },
+  HLgzCBNt: {
+    flex: 1
+  },
+  RmsMDeRW: {
+    flex: 1
+  },
+  rhsDsWsQ: {
+    flex: 1
+  },
+  LLmNMuJZ: {
+    flex: 1
+  },
+  lqToMnnf: {
+    flex: 1
+  },
+  EOeoEBoq: {
+    flex: 1
+  },
+  UIWdBlUh: {
+    flex: 1
+  },
+  XLQJQRVa: {
+    flex: 1
+  },
+  fPYgQfKs: {
+    flex: 1
+  },
+  QrdJcHYf: {
+    flex: 1
+  },
+  iHNCmSyz: {
+    flex: 1
+  },
+  BELFNGoS: {
+    flex: 1
+  },
+  WSdTNwRy: {
+    flex: 1
+  },
+  DSvSTXJR: {
+    flex: 1
+  },
+  pyHqaofH: {
+    flex: 1
+  },
+  MZTtIvnO: {
+    flex: 1,
+    flexDirection: "row"
+  },
+  fuuQMHyi: {
+    flex: 1
+  },
+  WCnlbHSL: {
+    flex: 1
+  },
+  BWdowGrt: {
+    flex: 1
+  },
+  uBDaZAHn: {
+    flex: 1
+  },
+  ndZowlYB: {
     flex: 1
   }
 });
