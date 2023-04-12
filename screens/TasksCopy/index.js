@@ -22,7 +22,7 @@ const Untitled13Copy = () => {
           <ImageBackground style={styles.kjzBusLi} source={require("./image (9).png")} resizeMode="cover"></ImageBackground>
         </View>
         
-      <View style={styles.tSeErceb}><View style={styles.yJACdBNK}><ImageBackground style={styles.pEaMrUJK} source={require("./image (15).png")} resizeMode="cover"></ImageBackground><ImageBackground style={styles.DJLRFsJT} source={require("./image (16).png")} resizeMode="cover"></ImageBackground></View><Text style={styles.EFrhINCn}>Name</Text><Text style={styles.QOliINUn}>Design Changes</Text><Text style={styles.jdsbZIiK}>Date</Text><Text style={styles.ndSXGEOp}>Oct 24, 2020</Text><View style={styles.cYMmVnCD}></View><View style={styles.GLNZCgPW}></View></View><View style={styles.ZznVisjC}><Text style={styles.TwHOtnxb}>Start Time</Text><Text style={styles.iRgkVUao}>End Time</Text><Text style={styles.sCreLsBs}>01:22 pm</Text><Text style={styles.fGVavKRH}>3:20 pm</Text></View></ScrollView>
+      <View style={styles.tSeErceb}><View style={styles.yJACdBNK}><ImageBackground style={styles.pEaMrUJK} source={require("./image (15).png")} resizeMode="cover"></ImageBackground><ImageBackground style={styles.DJLRFsJT} source={require("./image (16).png")} resizeMode="cover"></ImageBackground><Text style={styles.VrfpepRi}>Create a Task</Text></View><Text style={styles.EFrhINCn}>Name</Text><Text style={styles.QOliINUn}>Design Changes</Text><Text style={styles.jdsbZIiK}>Date</Text><Text style={styles.ndSXGEOp}>Oct 24, 2020</Text><View style={styles.cYMmVnCD}></View><View style={styles.GLNZCgPW}></View></View><View style={styles.ZznVisjC}><Text style={styles.TwHOtnxb}>Start Time</Text><Text style={styles.iRgkVUao}>End Time</Text><Text style={styles.sCreLsBs}>01:22 pm</Text><Text style={styles.fGVavKRH}>3:20 pm</Text><Text style={styles.VbGHdnnj}>Description</Text><Text style={styles.qthwSSeI}>Lorem ipsum dolor sit amet, er adipiscing elit, sed dianummy nibh euismod  dolor sit amet, er adipiscing elit, sed dianummy nibh euismod.</Text><Text style={styles.OXlGFDDo}>Category</Text><View style={styles.BPsIoMDP}><Text style={styles.pwnreQuu}>Design</Text></View><View style={styles.wipQJSYf}><Text style={styles.pASVFvvZ}>Meeting</Text></View><View style={styles.IdbmVBYi}><Text style={styles.ZzMTXrfL}>Coding</Text></View><View style={styles.NGvdZnmN}><Text style={styles.zezweYnd}>BDE</Text></View><View style={styles.sSmVYJip}><Text style={styles.JcLFNltV}>Testing</Text></View><View style={styles.WLWoawYc}><Text style={styles.lWdLzBqI}>Quick Call</Text></View><View style={styles.wTtVXtMu}><Text style={styles.fnFLwuhu}>Create Task</Text></View></View></ScrollView>
     </SafeAreaView>;
 };
 
@@ -798,8 +798,8 @@ const styles = StyleSheet.create({
     color: "#BFC8E8"
   },
   sCreLsBs: {
-    width: 100,
-    height: 27,
+    width: 86,
+    height: 18,
     lineHeight: 14,
     fontSize: 16,
     borderRadius: 0,
@@ -817,6 +817,201 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 46,
     left: 130,
+    fontWeight: "700"
+  },
+  VbGHdnnj: {
+    width: 113,
+    height: 27,
+    lineHeight: 14,
+    fontSize: 20,
+    borderRadius: 0,
+    position: "absolute",
+    top: 73,
+    left: 19,
+    color: "#BFC8E8"
+  },
+  qthwSSeI: {
+    width: 301,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0,
+    position: "absolute",
+    top: 96,
+    left: 22
+  },
+  OXlGFDDo: {
+    width: 94,
+    height: 22,
+    lineHeight: 14,
+    fontSize: 20,
+    borderRadius: 0,
+    color: "#BFC8E8",
+    position: "absolute",
+    top: 149,
+    left: 20
+  },
+  BPsIoMDP: {
+    height: 41,
+    width: 91,
+    backgroundColor: "#2762f6",
+    borderRadius: 40,
+    color: "#777777",
+    position: "absolute",
+    top: 178,
+    left: 28
+  },
+  wipQJSYf: {
+    height: 43,
+    width: 96,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 40,
+    color: "#777777",
+    position: "absolute",
+    top: 177,
+    left: 132
+  },
+  IdbmVBYi: {
+    height: 44,
+    width: 96,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 40,
+    color: "#777777",
+    position: "absolute",
+    top: 175,
+    left: 244
+  },
+  NGvdZnmN: {
+    height: 42,
+    width: 90,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 40,
+    color: "#777777",
+    position: "absolute",
+    top: 229,
+    left: 32
+  },
+  sSmVYJip: {
+    height: 42,
+    width: 97,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 40,
+    color: "#777777",
+    position: "absolute",
+    top: 228,
+    left: 135
+  },
+  WLWoawYc: {
+    height: 43,
+    width: 98,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 40,
+    color: "#777777",
+    position: "absolute",
+    top: 228,
+    left: 243
+  },
+  pwnreQuu: {
+    width: 60,
+    height: 19,
+    lineHeight: 14,
+    fontSize: 16,
+    borderRadius: 0,
+    color: "#ffffff",
+    fontWeight: "700",
+    position: "absolute",
+    top: 11,
+    left: 16
+  },
+  MtwaLUeI: {
+    height: 60,
+    width: 140,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 0,
+    color: "#777777"
+  },
+  ZzMTXrfL: {
+    width: 69,
+    height: 23,
+    lineHeight: 14,
+    fontSize: 18,
+    borderRadius: 0,
+    position: "absolute",
+    top: 12,
+    left: 19
+  },
+  pASVFvvZ: {
+    width: 73,
+    height: 24,
+    lineHeight: 14,
+    fontSize: 18,
+    borderRadius: 0,
+    position: "absolute",
+    top: 12,
+    left: 16
+  },
+  zezweYnd: {
+    width: 42,
+    height: 22,
+    lineHeight: 14,
+    fontSize: 18,
+    borderRadius: 0,
+    position: "absolute",
+    top: 14,
+    left: 27
+  },
+  JcLFNltV: {
+    width: 69,
+    height: 26,
+    lineHeight: 14,
+    fontSize: 18,
+    borderRadius: 0,
+    position: "absolute",
+    top: 11,
+    left: 15
+  },
+  lWdLzBqI: {
+    width: 85,
+    height: 22,
+    lineHeight: 14,
+    fontSize: 18,
+    borderRadius: 0,
+    position: "absolute",
+    top: 11,
+    left: 8
+  },
+  wTtVXtMu: {
+    height: 54,
+    width: 318,
+    backgroundColor: "#2762f6",
+    borderRadius: 40,
+    color: "#777777",
+    position: "absolute",
+    top: 281,
+    left: 29
+  },
+  fnFLwuhu: {
+    width: 141,
+    height: 20,
+    lineHeight: 14,
+    fontSize: 24,
+    borderRadius: 0,
+    color: "#ffffff",
+    fontWeight: "700",
+    position: "absolute",
+    top: 22,
+    left: 95
+  },
+  VrfpepRi: {
+    width: 117,
+    height: 18,
+    lineHeight: 14,
+    fontSize: 18,
+    borderRadius: 0,
+    position: "absolute",
+    top: 17,
+    left: 118,
+    color: "#ffffff",
     fontWeight: "700"
   }
 });
